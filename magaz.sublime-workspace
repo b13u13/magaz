@@ -4,89 +4,27 @@
 		"selected_items":
 		[
 			[
-				"ba",
-				"background"
-			],
-			[
-				"pa",
-				"padding-left"
-			],
-			[
-				"ri",
-				"right"
+				"po",
+				"postgresql"
 			],
 			[
 				"te",
-				"text-align"
+				"text\t(schema.rb)"
 			],
 			[
-				"x-",
-				"x-small"
-			],
-			[
-				"la",
-				"larger"
-			],
-			[
-				"font-s",
-				"font-size"
+				"st",
+				"string"
 			]
 		]
 	},
 	"buffers":
 	[
 		{
-			"file": "db/migrate/20171031194104_create_products.rb",
+			"file": "app/models/product.rb",
 			"settings":
 			{
-				"buffer_size": 258,
+				"buffer_size": 169,
 				"encoding": "UTF-8",
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "app/views/products/_form.html.erb",
-			"settings":
-			{
-				"buffer_size": 944,
-				"encoding": "UTF-8",
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "db/seeds.rb",
-			"settings":
-			{
-				"buffer_size": 1821,
-				"encoding": "UTF-8",
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "app/assets/stylesheets/products.scss",
-			"settings":
-			{
-				"buffer_size": 682,
-				"encoding": "UTF-8",
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"contents": "Package Control Messages\n========================\n\nSCSS Compiler\n-------------\n\n  SCSS Compiler - Install\n  -----------------------\n  \n  Thanks for installing SCSS Compiler.\n  \n  To get started, please follow the operating system specific instructions below:\n  \n  For WINDOWS:\n  Download and install the Ruby installer (https://rubyinstaller.org/).\n  \n  Ensure the \"Add Ruby executables to your PATH\" is enabled during the\n  installation process.\n  \n  Open an Admin Command or PowerShell window and run the following command:\n  \n  gem install sass\n  \n  -----------------------------------\n  \n  For LINUX/OSX:\n  Open a Terminal window and run the following command:\n  \n  sudo gem install sass\n  We assume that the scss binary is installed in the following location:\n  /usr/local/bin.\n  \n  -----------------------------------\n  \n  You can then select the SCSS you wish to compile, right click and use the\n  context menu to select Compile SCSS or Compile SCSS with minification.\n  \n  If you have any issues or requests, please visit:\n  https://github.com/mattarnster/scsscompiler\n\n\nEmmet\n-----\n\n  Thank you for installing Emmet -- a toolkit that can greatly improve your workflow. Note that this plugin automatically downloads and installs PyV8 binary (see status bar message). \n  \n  ******************************\n  Please restart editor \n  to finish installation process \n  after PyV8 was downloaded.\n  ******************************\n  \n  Tab key handler\n  ==========================\n  \n  By default, Emmet allows you to expand abbreviations with Tab key in HTML, XML, HAML and CSS/SASS/LESS/Stylus documents. As a side effect, you can’t use some of your ST2 snippets.\n  \n  Please read https://github.com/sergeche/emmet-sublime#tab-key-handler about how Tab handler works and how to tweak its behavior to match your needs.\n  \n  Enter key\n  ==========================\n  \n  In HTML and XML documents, Emmet overrides Enter key to insert formatted line breaks between opening and closing tags. In some cases it will break character input (for example, in Japanese language).\n  \n  To disable Enter key handler, simply add the following option in your user's Preferences file:\n  \n  \"disable_formatted_linebreak\": true\n  \n  Actions shortcuts\n  ==========================\n  \n  Emmet has a number of actions with keyboard shortcuts that may override ones you're using commonly (for example, Ctrl-E or Ctrl-Down). Please read the project main page to get list of available actions and keyboard shortcuts and how to disable them:\n  https://github.com/sergeche/emmet-sublime\n  \n  Documentation and examples:\n  http://emmet.io\n  \n  ------------------------------\n  Follow me on Twitter: @emmetio\n  ------------------------------\n\n\nGitGutter\n---------\n\n  Thanks for installing Git Gutter!!!\n  \n  👣 Follow me: @jisaacks\n  \n  \n  💛 Git Gutter? Want to support development?\n  \n  I've teamed up with Wes Bos to offer the following discounts:\n  \n  +------------------------------------------------+\n  |                                                |\n  |   Use the coupon code GITGUTTER for $10 off    |\n  |                                                |\n  +------------------------------------------------+\n  \n  🏅 ⭐ ES6 ⭐\n  \n  👉 ES6.io/friend/GITGUTTER\n  \n  🏅 ⭐ Sublime Text Book ⭐\n  \n  👉 SublimeTextBook.com/friend/GITGUTTER\n  \n  🏅 ⭐ React For Beginners ⭐\n  \n  👉 ReactForBeginners.com/friend/GITGUTTER\n  \n  \n  Join 15,000 other developers already learning with Wes Bos.\n  \n  These are fantastic resources - 100% money back guarantee! 🌟\n\n\nSublimeLinter-ruby\n------------------\n\n  SublimeLinter-ruby\n  -------------------------------\n  This linter plugin for SublimeLinter provides an interface to ruby.\n  \n  ** IMPORTANT! **\n  \n  Before this plugin will activate, you *must*\n  follow the installation instructions here:\n  \n  https://github.com/SublimeLinter/SublimeLinter-ruby\n",
-			"settings":
-			{
-				"buffer_size": 3861,
-				"line_ending": "Unix",
-				"name": "Package Control Messages",
-				"read_only": true,
-				"scratch": true
-			}
-		},
-		{
-			"file": "app/views/products/new.html.erb",
-			"settings":
-			{
-				"buffer_size": 100,
 				"line_ending": "Unix"
 			}
 		}
@@ -99,27 +37,19 @@
 	"command_palette":
 	{
 		"height": 392.0,
-		"last_filter": "pa",
+		"last_filter": "",
 		"selected_items":
 		[
 			[
-				"pa",
+				"instaa",
 				"Package Control: Install Package"
 			],
 			[
-				"",
-				"Package Control: Install Package"
-			],
-			[
-				"Pa",
-				"Package Control: Install Package"
-			],
-			[
-				"pack",
+				"packa",
 				"Package Control: Install Package"
 			]
 		],
-		"width": 731.0
+		"width": 542.0
 	},
 	"console":
 	{
@@ -139,31 +69,71 @@
 	},
 	"expanded_folders":
 	[
-		"/home/alex/rails_project/magaz",
-		"/home/alex/rails_project/magaz/app",
-		"/home/alex/rails_project/magaz/app/assets",
-		"/home/alex/rails_project/magaz/app/assets/images",
-		"/home/alex/rails_project/magaz/app/assets/stylesheets",
-		"/home/alex/rails_project/magaz/app/controllers",
-		"/home/alex/rails_project/magaz/app/models",
-		"/home/alex/rails_project/magaz/app/views",
-		"/home/alex/rails_project/magaz/app/views/products"
+		"/home/oovsiychuk/rails_project/magaz",
+		"/home/oovsiychuk/rails_project/magaz/app",
+		"/home/oovsiychuk/rails_project/magaz/app/assets",
+		"/home/oovsiychuk/rails_project/magaz/app/assets/stylesheets",
+		"/home/oovsiychuk/rails_project/magaz/app/channels",
+		"/home/oovsiychuk/rails_project/magaz/app/channels/application_cable",
+		"/home/oovsiychuk/rails_project/magaz/app/controllers",
+		"/home/oovsiychuk/rails_project/magaz/app/models",
+		"/home/oovsiychuk/rails_project/magaz/app/views",
+		"/home/oovsiychuk/rails_project/magaz/app/views/products"
 	],
 	"file_history":
 	[
-		"/home/alex/oiv-api-create_event_specs/spec/controllers/alarms_controller_spec.rb",
-		"/home/alex/oiv-api-create_event_specs/spec/spec_helper.rb"
+		"/home/oovsiychuk/comcast/partner-ticketing-gateway/lib/tasks/field_values.rake",
+		"/home/oovsiychuk/comcast/partner-ticketing-gateway/lib/tasks/ticketing_system_queries.rake",
+		"/home/oovsiychuk/comcast/partner-ticketing-gateway/config/secrets.example.yml",
+		"/home/oovsiychuk/comcast/partner-ticketing-gateway/lib/tasks/tickets.rake",
+		"/home/oovsiychuk/comcast/partner-ticketing-gateway/lib/tasks/ticketing_systems.rake",
+		"/home/oovsiychuk/comcast/partner-ticketing-gateway/app/processors/ticket_processor.rb",
+		"/home/oovsiychuk/comcast/partner-ticketing-gateway/app/workers/preload_tickets_worker.rb",
+		"/home/oovsiychuk/comcast/partner-ticketing-gateway/app/models/concerns/changeable_fields.rb",
+		"/home/oovsiychuk/comcast/partner-ticketing-gateway/db/migrate/20141006155225_create_comments.rb",
+		"/home/oovsiychuk/comcast/partner-ticketing-gateway/app/services/authentication/xoc_user_service.rb",
+		"/home/oovsiychuk/comcast/partner-ticketing-gateway/app/processors/ptgw_tickets_synchronizer.rb",
+		"/home/oovsiychuk/comcast/partner-ticketing-gateway/config/application.rb",
+		"/home/oovsiychuk/comcast/partner-ticketing-gateway/app/validators/attachment_content_type_validator.rb",
+		"/home/oovsiychuk/comcast/partner-ticketing-gateway/app/models/attachment.rb",
+		"/home/oovsiychuk/comcast/partner-ticketing-gateway/app/models/access_token.rb",
+		"/home/oovsiychuk/comcast/partner-ticketing-gateway/app/models/comment.rb",
+		"/home/oovsiychuk/comcast/partner-ticketing-gateway/app/processors/service_now_ticket_processor.rb",
+		"/home/oovsiychuk/comcast/partner-ticketing-gateway/app/controllers/tickets_controller.rb",
+		"/home/oovsiychuk/comcast/partner-ticketing-gateway/spec/api/shared_examples/tickets_api_requests.rb",
+		"/home/oovsiychuk/comcast/partner-ticketing-gateway/config/database.yml",
+		"/home/oovsiychuk/comcast/partner-ticketing-gateway/app/controllers/api/tickets_controller.rb",
+		"/home/oovsiychuk/comcast/partner-ticketing-gateway/app/controllers/api/statuses_controller.rb",
+		"/home/oovsiychuk/comcast/partner-ticketing-gateway/app/controllers/api/comments_controller.rb",
+		"/home/oovsiychuk/comcast/partner-ticketing-gateway/app/controllers/api/attachments_controller.rb",
+		"/home/oovsiychuk/.local/share/Trash/files/20170630090847_add_owner_to_comments_and_attachments.2.rb",
+		"/home/oovsiychuk/comcast/partner-ticketing-gateway/app/models/ticket.rb",
+		"/home/oovsiychuk/comcast/partner-ticketing-gateway/db/migrate/20170630090847_add_owner_to_comments_and_attachments.rb",
+		"/home/oovsiychuk/comcast/partner-ticketing-gateway/app/workers/attachments_worker.rb",
+		"/home/oovsiychuk/comcast/partner-ticketing-gateway/app/workers/carrierwave_cache_cleaner_worker.rb",
+		"/home/oovsiychuk/comcast/partner-ticketing-gateway/app/workers/orphan_tickets_worker.rb",
+		"/home/oovsiychuk/comcast/partner-ticketing-gateway/app/workers/preload_tickets_scheduler_worker.rb",
+		"/home/oovsiychuk/comcast/partner-ticketing-gateway/config/application_config.yml",
+		"/home/oovsiychuk/comcast/partner-ticketing-gateway/config/application_config.example.yml",
+		"/home/oovsiychuk/comcast/partner-ticketing-gateway/db/schema.rb",
+		"/home/oovsiychuk/comcast/partner-ticketing-gateway/Gemfile",
+		"/home/oovsiychuk/comcast/partner-ticketing-gateway/.env",
+		"/home/oovsiychuk/comcast/change_timeline/config/secrets.yml",
+		"/home/oovsiychuk/comcast/partner-ticketing-gateway/config/sat_sertificates/sat-ui.pub",
+		"/home/oovsiychuk/comcast/partner-ticketing-gateway/config/sat_certificates/sat-ui.pub",
+		"/home/oovsiychuk/comcast/partner-ticketing-gateway/config/sat_certificates.example/sat-ui.pub",
+		"/home/oovsiychuk/comcast/what-is-what/Gemfile.lock",
+		"/home/oovsiychuk/comcast/ticket-abstractor-client/application_config.yml"
 	],
 	"find":
 	{
-		"height": 23.0
+		"height": 40.0
 	},
 	"find_in_files":
 	{
-		"height": 90.0,
+		"height": 104.0,
 		"where_history":
 		[
-			""
 		]
 	},
 	"find_state":
@@ -171,9 +141,6 @@
 		"case_sensitive": false,
 		"find_history":
 		[
-			"factory",
-			"alarm_controller",
-			"rake"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -191,118 +158,119 @@
 	"groups":
 	[
 		{
-			"selected": 3,
+			"selected": 0,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "db/migrate/20171031194104_create_products.rb",
+					"file": "app/models/product.rb",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 258,
+						"buffer_size": 169,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								258,
-								258
+								164,
+								164
 							]
 						],
 						"settings":
 						{
+							"bracket_highlighter.busy": false,
+							"bracket_highlighter.locations":
+							{
+								"close":
+								{
+									"1":
+									[
+										165,
+										168
+									]
+								},
+								"icon":
+								{
+									"1":
+									[
+										"Packages/BracketHighlighter/icons/dot.png",
+										"region.yellowish brackethighlighter.default"
+									]
+								},
+								"open":
+								{
+									"1":
+									[
+										0,
+										5
+									]
+								},
+								"unmatched":
+								{
+								}
+							},
+							"bracket_highlighter.regions":
+							[
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content"
+							],
+							"colorcode": true,
 							"syntax": "Packages/Ruby/Ruby.sublime-syntax"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 2,
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "app/views/products/_form.html.erb",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 944,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								622,
-								622
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Rails/HTML (Rails).sublime-syntax",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 5,
-					"type": "text"
-				},
-				{
-					"buffer": 2,
-					"file": "db/seeds.rb",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 1821,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								890,
-								890
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Ruby/Ruby.sublime-syntax",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 4,
-					"type": "text"
-				},
-				{
-					"buffer": 3,
-					"file": "app/assets/stylesheets/products.scss",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 682,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								376,
-								376
-							]
-						],
-						"settings":
-						{
-							"git_gutter_is_enabled": true,
-							"syntax": "Packages/CSS/CSS.sublime-syntax"
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -310,76 +278,17 @@
 					},
 					"stack_index": 0,
 					"type": "text"
-				},
-				{
-					"buffer": 4,
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 3861,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								3616,
-								3616
-							]
-						],
-						"settings":
-						{
-							"auto_indent": false,
-							"git_gutter_is_enabled": false,
-							"syntax": "Packages/Text/Plain text.tmLanguage",
-							"tab_width": 2,
-							"word_wrap": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 1440.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 1,
-					"type": "text"
-				},
-				{
-					"buffer": 5,
-					"file": "app/views/products/new.html.erb",
-					"semi_transient": true,
-					"settings":
-					{
-						"buffer_size": 100,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								0
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Rails/HTML (Rails).sublime-syntax"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 3,
-					"type": "text"
 				}
 			]
 		}
 	],
 	"incremental_find":
 	{
-		"height": 23.0
+		"height": 28.0
 	},
 	"input":
 	{
-		"height": 0.0
+		"height": 36.0
 	},
 	"layout":
 	{
@@ -404,6 +313,10 @@
 		]
 	},
 	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 130.0
+	},
 	"output.find_results":
 	{
 		"height": 0.0
@@ -412,7 +325,7 @@
 	"project": "magaz.sublime-project",
 	"replace":
 	{
-		"height": 42.0
+		"height": 52.0
 	},
 	"save_all_on_build": true,
 	"select_file":
@@ -423,27 +336,91 @@
 		[
 			[
 				"",
-				"db/seeds.rb"
+				"app/services/authentication/xoc_user_service.rb"
 			],
 			[
-				"seed",
-				"db/seeds.rb"
+				"xoc",
+				"app/services/authentication/xoc_user_service.rb"
 			],
 			[
-				"mi",
-				"db/migrate/20171031194104_create_products.rb"
+				"sche",
+				"config/schedules/ptgw_schedule.yml"
 			],
 			[
-				"spec",
-				"spec/spec_helper.rb"
+				"preloadticketsschedulerworker",
+				"app/workers/preload_tickets_scheduler_worker.rb"
 			],
 			[
-				"alarm_consp",
-				"spec/controllers/alarms_controller_spec.rb"
+				"sched",
+				"config/schedules/ptgw_schedule.yml"
 			],
 			[
-				"alarm",
-				"app/controllers/alarms_controller.rb"
+				"regionsdataalertworker",
+				"app/workers/regions_data_alert_worker.rb"
+			],
+			[
+				"tickets_a",
+				"spec/api/shared_examples/tickets_api_requests.rb"
+			],
+			[
+				"xcom",
+				"app/jobs/xconf_firmware_updates_job.rb"
+			],
+			[
+				"xcon",
+				"app/jobs/xconf_firmware_updates_job.rb"
+			],
+			[
+				"bu",
+				"config/initializers/bugsnag.rb"
+			],
+			[
+				"config",
+				"config/secrets.yml"
+			],
+			[
+				"api_communication_logger.rb",
+				"app/middlewares/api_communication_logger.rb"
+			],
+			[
+				"bugs",
+				"config/initializers/bugsnag.rb"
+			],
+			[
+				"bugsn",
+				"app/jobs/concerns/bugsnag_notifiable.rb"
+			],
+			[
+				"appl",
+				"app/controllers/application_controller.rb"
+			],
+			[
+				"component_binding",
+				"app/models/population_group_stack_component_binding.rb"
+			],
+			[
+				"sch",
+				"config/schedule.rb"
+			],
+			[
+				"s",
+				"config/schedule.rb"
+			],
+			[
+				"population_group_stack",
+				"app/models/population_group_stack_component_binding.rb"
+			],
+			[
+				"popu",
+				"app/models/population_group_stack_component_binding.rb"
+			],
+			[
+				"atta",
+				"app/controllers/attachments_controller.rb"
+			],
+			[
+				"att",
+				"app/models/attachment.rb"
 			]
 		],
 		"width": 0.0
@@ -454,17 +431,21 @@
 		"last_filter": "",
 		"selected_items":
 		[
+			[
+				"",
+				"~/comcast/partner-ticketing-gateway/ptgw.sublime-project"
+			]
 		],
 		"width": 380.0
 	},
 	"select_symbol":
 	{
-		"height": 392.0,
+		"height": 0.0,
 		"last_filter": "",
 		"selected_items":
 		[
 		],
-		"width": 392.0
+		"width": 0.0
 	},
 	"selected_group": 0,
 	"settings":
@@ -474,7 +455,7 @@
 	"show_open_files": false,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 243.0,
+	"side_bar_width": 496.0,
 	"status_bar_visible": true,
 	"template_settings":
 	{
