@@ -16,6 +16,8 @@
 /tmp/*
 !/log/.keep
 !/tmp/.keep
+/magaz.sublime-project
+/magaz.sublime-workspace
 
 /node_modules
 /yarn-error.log
