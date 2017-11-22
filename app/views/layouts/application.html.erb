@@ -10,21 +10,22 @@
 
   <body class='<%= controller.controller_name %>'>
   	<div id="banner">
-  		<%= image_tag("logo.png") %> 
+  		<%= image_tag("logo.png") %>
   		<%= @page_title || "Easy Busy Buy" %>
   	</div>
   	<div id="columns">
 		<div id="side">
 			<ul>
-				<li><a href="#">Home</a></li>
+				<li><%= link_to 'Home', store_path %></li>
 				<li><a href="#">Questions</a></li>
 				<li><a href="#">News</a></li>
 				<li><a href="#">Contact</a></li>
+        <p><%= l @date_loaded, :format => :short %></p>
 			</ul>
 		</div>
 		<div id="main">
 			<%= yield %>
 		</div>
-  	</div>  
+  	</div>
   </body>
 </html>
