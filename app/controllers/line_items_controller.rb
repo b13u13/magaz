@@ -59,7 +59,11 @@ class LineItemsController < ApplicationController
   def destroy
     @line_item.destroy
     respond_to do |format|
-      format.html { redirect_to line_items_url, notice: 'Line item was successfully destroyed.' }
+      if LineItem.find_by_cart_id(@line_item.cart_id).nil?
+       format.html { redirect_to store_url, notice: 'Теперь ваша корзина пуста.' }
+      else
+        format.html { redirect_to @line_item.cart, notice: 'Line item was successfully destroyed.' }
+      end
       format.json { head :no_content }
     end
   end
