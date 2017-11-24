@@ -37,13 +37,4 @@ class CartsControllerTest < ActionDispatch::IntegrationTest
     patch cart_url(@cart), params: { cart: {  } }
     assert_redirected_to cart_url(@cart)
   end
-
-  test "should destroy cart" do
-    assert_difference('Cart.count', -1) do
-      set_cart
-      delete :destroy, id: @cart
-    end
-
-    assert_redirected_to store_url
-  end
 end
