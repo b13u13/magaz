@@ -2,7 +2,7 @@
 
 one:
   product: one
-  cart: one
+  order: one
 
 two:
   product: two
