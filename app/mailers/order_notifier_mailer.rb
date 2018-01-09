@@ -1,6 +1,6 @@
 class OrderNotifierMailer < ApplicationMailer
 
-  default from: 'EBB <easy.busybuy@gmial.com>'
+  default from: 'EBB <depot@example.com>'
 
   # Subject can be set in your I18n file at config/locales/en.yml
   # with the following lookup:
@@ -10,7 +10,7 @@ class OrderNotifierMailer < ApplicationMailer
   def received(order)
     @order = order
 
-    mail to: order.email, subject: 'Подтверждение заказа'
+    mail to: order.email, subject: 'Подтверждение заказа в Pragmatic Store'
   end
 
   # Subject can be set in your I18n file at config/locales/en.yml
@@ -21,6 +21,6 @@ class OrderNotifierMailer < ApplicationMailer
   def shipped(order)
     @order = order
 
-    mail to: order.email, subject: 'Заказ из отправлен'
+    mail to: order.email, subject: 'Заказ из Pragmatic Store отправлен'
   end
 end

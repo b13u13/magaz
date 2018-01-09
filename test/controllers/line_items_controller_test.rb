@@ -35,7 +35,7 @@ class LineItemsControllerTest < ActionDispatch::IntegrationTest
 
   test "should update line_item" do
     patch line_item_url(@line_item), params: { line_item: {product_id: @line_item.product_id } }
-    assert_redirected_to line_item_url(@line_item)
+    assert_response :success
   end
 
   test "should destroy line_item" do
