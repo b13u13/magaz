@@ -45,6 +45,9 @@ group :development, :test do
   gem 'capybara', '~> 2.13'
   gem 'selenium-webdriver'
   gem 'rails-controller-testing'
+  gem 'pry-rails'
+  gem 'pry-remote'
+  gem 'binding_of_caller'
 end
 
 group :development do
