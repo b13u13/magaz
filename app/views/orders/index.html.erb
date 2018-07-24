@@ -1,4 +1,6 @@
-<p id="notice"><%= notice %></p>
+<% if flash[:alert] %>
+<p id="notice"><%= flash[:alert] %></p>
+<% end %>
 
 <h1>Orders</h1>
 

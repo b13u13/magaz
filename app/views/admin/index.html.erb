@@ -1,0 +1,6 @@
+<h1>Admin Page</h1>
+
+Сейчас <%= Time.zone.now %>
+<br>
+У нас имеется <%= link_to  "#{pluralize(@total_orders, 'order')}", orders_path %>
+
