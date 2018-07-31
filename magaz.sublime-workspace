@@ -4,12 +4,96 @@
 		"selected_items":
 		[
 			[
-				"ass",
-				"assert_equal"
+				"login",
+				"login_as"
+			],
+			[
+				"user",
+				"user_id"
+			],
+			[
+				"sess",
+				"session"
+			],
+			[
+				"session",
+				"session[:user_id"
+			],
+			[
+				"up",
+				"update"
+			],
+			[
+				"crea",
+				"create"
+			],
+			[
+				"aut",
+				"authorize\t(application_controller.rb)"
+			],
+			[
+				"not",
+				"notice\t(orders_controller.rb)"
+			],
+			[
+				"logn",
+				"login_url\t(sessions_controller.rb)"
+			],
+			[
+				"un",
+				"unless\tunless … end"
+			],
+			[
+				"pa",
+				"password"
+			],
+			[
+				"stor",
+				"store_url\t(user_stories_test.rb)"
 			],
 			[
 				"asser",
-				"assert_template"
+				"assert_redirected_to"
+			],
+			[
+				"asse",
+				"assert_equal\t(user_stories_test.rb)"
+			],
+			[
+				"admin",
+				"admin_url\t(sessions_controller.rb)"
+			],
+			[
+				"assert_re",
+				"assert_redirected_to\t(user_stories_test.rb)"
+			],
+			[
+				"to",
+				"total_orders\t(index.html.erb)"
+			],
+			[
+				"field",
+				"fieldset\tTag"
+			],
+			[
+				"flash",
+				"flash\tflash[…]"
+			],
+			[
+				"use",
+				"users_path"
+			],
+			[
+				"users",
+				"users_url"
+			],
+			[
+				"pre",
+				"presence\t(order.rb)"
+			],
+			[
+				"ass",
+				"assert_equal"
 			],
 			[
 				"su",
@@ -124,10 +208,6 @@
 				"img\t(application.scss)"
 			],
 			[
-				"asse",
-				"assert_select"
-			],
-			[
 				"store_",
 				"store_path\t(application.html.erb)"
 			],
@@ -138,10 +218,6 @@
 			[
 				"en",
 				"encod_payload"
-			],
-			[
-				"pa",
-				"payload"
 			],
 			[
 				"dis",
@@ -303,6 +379,222 @@
 				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
+		},
+		{
+			"file": "app/models/order.rb",
+			"settings":
+			{
+				"buffer_size": 430,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/controllers/orders_controller.rb",
+			"settings":
+			{
+				"buffer_size": 2243,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/models/user.rb",
+			"settings":
+			{
+				"buffer_size": 109,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "Gemfile",
+			"settings":
+			{
+				"buffer_size": 2150,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/controllers/users_controller.rb",
+			"settings":
+			{
+				"buffer_size": 1857,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/controllers/application_controller.rb",
+			"settings":
+			{
+				"buffer_size": 352,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"contents": "Searching 1345 files for \"authorize\"\n\n/home/oovsiychuk/rails_project/magaz/app/controllers/application_controller.rb:\n    2    protect_from_forgery with: :exception\n    3    before_action :set_date_loaded\n    4:   before_action :authorize\n    5  \n    6  \n    .\n   12    end\n   13  \n   14:   def authorize\n   15    \tunless User.find(id: session[:user_id])\n   16    \t\tredirect_to login_url, notice: 'Please login'\n\n/home/oovsiychuk/rails_project/magaz/app/controllers/carts_controller.rb:\n    1  class CartsController < ApplicationController\n    2    before_action :set_cart, only: [:show, :edit, :update, :destroy]\n    3:   skip_before_action :authorize, only: [:create, :update, :destroy]\n    4    rescue_from ActiveRecord::RecordNotFound, with: :invalid_cart\n    5  \n\n/home/oovsiychuk/rails_project/magaz/app/controllers/line_items_controller.rb:\n    1  class LineItemsController < ApplicationController\n    2    include CurrentCart\n    3:   skip_before_action :authorize, only: :create\n    4    before_action :set_cart, only: [:create]\n    5    before_action :set_line_item, only: [:show, :edit, :update, :destroy]\n\n/home/oovsiychuk/rails_project/magaz/app/controllers/orders_controller.rb:\n    1  class OrdersController < ApplicationController\n    2    include CurrentCart\n    3:   skip_before_action :authorize, only: [:new, :create]\n    4    before_action :set_cart, only: [:new, :create]\n    5    before_action :set_order, only: [:show, :edit, :update, :destroy]\n\n/home/oovsiychuk/rails_project/magaz/app/controllers/sessions_controller.rb:\n    1  class SessionsController < ApplicationController\n    2:   skip_before_action :authorize\n    3    def new\n    4    end\n\n/home/oovsiychuk/rails_project/magaz/app/controllers/store_controller.rb:\n    1  class StoreController < ApplicationController\n    2    include CurrentCart\n    3:   skip_before_action :authorize\n    4    before_action :set_cart\n    5  \n\n/home/oovsiychuk/rails_project/magaz/log/development.log:\n    <binary>\n\n9 matches across 7 files\n",
+			"settings":
+			{
+				"buffer_size": 2007,
+				"line_ending": "Unix",
+				"name": "Find Results",
+				"scratch": true
+			}
+		},
+		{
+			"file": "app/controllers/store_controller.rb",
+			"settings":
+			{
+				"buffer_size": 186,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/views/users/index.html.erb",
+			"settings":
+			{
+				"buffer_size": 569,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/views/users/_form.html.erb",
+			"settings":
+			{
+				"buffer_size": 955,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "test/controllers/users_controller_test.rb",
+			"settings":
+			{
+				"buffer_size": 1057,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "test/fixtures/users.yml",
+			"settings":
+			{
+				"buffer_size": 246,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "test/application_system_test_case.rb",
+			"settings":
+			{
+				"buffer_size": 157,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/controllers/sessions_controller.rb",
+			"settings":
+			{
+				"buffer_size": 468,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/controllers/carts_controller.rb",
+			"settings":
+			{
+				"buffer_size": 2057,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/controllers/line_items_controller.rb",
+			"settings":
+			{
+				"buffer_size": 2257,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/views/admin/index.html.erb",
+			"settings":
+			{
+				"buffer_size": 137,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/controllers/admin_controller.rb",
+			"settings":
+			{
+				"buffer_size": 99,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "test/controllers/admin_controller_test.rb",
+			"settings":
+			{
+				"buffer_size": 171,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "config/routes.rb",
+			"settings":
+			{
+				"buffer_size": 453,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "test/test_helper.rb",
+			"settings":
+			{
+				"buffer_size": 450,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/views/sessions/new.html.erb",
+			"settings":
+			{
+				"buffer_size": 504,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/views/orders/index.html.erb",
+			"settings":
+			{
+				"buffer_size": 766,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "test/controllers/sessions_controller_test.rb",
+			"settings":
+			{
+				"buffer_size": 625,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
 		}
 	],
 	"build_system": "",
@@ -349,14 +641,19 @@
 		"/home/oovsiychuk/rails_project/magaz/app",
 		"/home/oovsiychuk/rails_project/magaz/app/assets",
 		"/home/oovsiychuk/rails_project/magaz/app/controllers",
-		"/home/oovsiychuk/rails_project/magaz/app/mailers",
+		"/home/oovsiychuk/rails_project/magaz/app/models",
+		"/home/oovsiychuk/rails_project/magaz/app/views",
+		"/home/oovsiychuk/rails_project/magaz/app/views/admin",
+		"/home/oovsiychuk/rails_project/magaz/app/views/orders",
+		"/home/oovsiychuk/rails_project/magaz/app/views/sessions",
+		"/home/oovsiychuk/rails_project/magaz/app/views/users",
 		"/home/oovsiychuk/rails_project/magaz/test",
-		"/home/oovsiychuk/rails_project/magaz/test/controllers",
 		"/home/oovsiychuk/rails_project/magaz/test/fixtures",
 		"/home/oovsiychuk/rails_project/magaz/test/integration"
 	],
 	"file_history":
 	[
+		"/home/oovsiychuk/rails_project/magaz/app/controllers/concerns/current_cart.rb",
 		"/home/oovsiychuk/rails_project/magaz/app/controllers/line_items_controller.rb",
 		"/home/oovsiychuk/rails_project/magaz/app/models/product.rb",
 		"/home/oovsiychuk/rails_project/magaz/app/assets/stylesheets/store.scss",
@@ -391,7 +688,6 @@
 		"/home/oovsiychuk/rails_project/magaz/app/controllers/carts_controller.rb",
 		"/home/oovsiychuk/rails_project/magaz/db/migrate/20171122124923_combine_items_in_cart.rb",
 		"/home/oovsiychuk/rails_project/magaz/db/migrate/20171122123059_add_quantity_to_line_items.rb",
-		"/home/oovsiychuk/rails_project/magaz/app/controllers/concerns/current_cart.rb",
 		"/home/oovsiychuk/rails_project/magaz/app/assets/stylesheets/application.scss",
 		"/home/oovsiychuk/rails_project/magaz/app/controllers/store_controller.rb",
 		"/home/oovsiychuk/rails_project/magaz/Gemfile.lock",
@@ -458,11 +754,11 @@
 	],
 	"find":
 	{
-		"height": 41.0
+		"height": 42.0
 	},
 	"find_in_files":
 	{
-		"height": 107.0,
+		"height": 110.0,
 		"where_history":
 		[
 			""
@@ -473,6 +769,10 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"authorize",
+			"[:",
+			"depot_form",
+			"deliver",
 			"puts",
 			"seesion",
 			"add_product"
@@ -493,7 +793,7 @@
 	"groups":
 	[
 		{
-			"selected": 0,
+			"selected": 21,
 			"sheets":
 			[
 				{
@@ -515,6 +815,9 @@
 						],
 						"settings":
 						{
+							"SL.2416.region_keys":
+							[
+							],
 							"bracket_highlighter.busy": false,
 							"bracket_highlighter.clone": -1,
 							"bracket_highlighter.clone_locations":
@@ -694,6 +997,7 @@
 								"bh_tag_content"
 							],
 							"colorcode": true,
+							"git_gutter_is_enabled": true,
 							"syntax": "Packages/Ruby/Ruby.sublime-syntax",
 							"translate_tabs_to_spaces": false
 						},
@@ -701,7 +1005,920 @@
 						"translation.y": 378.0,
 						"zoom_level": 1.0
 					},
+					"stack_index": 24,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "app/models/order.rb",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 430,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								127,
+								127
+							]
+						],
+						"settings":
+						{
+							"SL.2429.region_keys":
+							[
+								"SL.ruby.Gutter.|region.yellowish markup.warning.sublime_linter|dot",
+								"sublime_linter.protected_regions",
+								"SL.ruby.Highlights.|e714e9f7456566267e659279a9c91195ff239d0f3af60e6f4ea42afa6e970237|region.yellowish markup.warning.sublime_linter|32"
+							],
+							"colorcode": true,
+							"git_gutter_is_enabled": true,
+							"syntax": "Packages/Ruby/Ruby.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 21,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "app/controllers/orders_controller.rb",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2243,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								380,
+								380
+							]
+						],
+						"settings":
+						{
+							"SL.2446.region_keys":
+							[
+							],
+							"SL.3046.region_keys":
+							[
+								"sublime_linter.protected_regions"
+							],
+							"colorcode": true,
+							"git_gutter_is_enabled": true,
+							"syntax": "Packages/Ruby/Ruby.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 7,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "app/models/user.rb",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 109,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								109,
+								109
+							]
+						],
+						"settings":
+						{
+							"SL.2449.region_keys":
+							[
+								"sublime_linter.protected_regions"
+							],
+							"colorcode": true,
+							"git_gutter_is_enabled": true,
+							"syntax": "Packages/Ruby/Ruby.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 23,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "Gemfile",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2150,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								629,
+								629
+							]
+						],
+						"settings":
+						{
+							"SL.2452.region_keys":
+							[
+							],
+							"colorcode": true,
+							"git_gutter_is_enabled": true,
+							"syntax": "Packages/Ruby/Ruby.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 63.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 22,
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "app/controllers/users_controller.rb",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1857,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								284,
+								284
+							]
+						],
+						"settings":
+						{
+							"SL.2453.region_keys":
+							[
+								"sublime_linter.protected_regions"
+							],
+							"SL.2538.region_keys":
+							[
+							],
+							"SL.3013.region_keys":
+							[
+							],
+							"SL.3049.region_keys":
+							[
+							],
+							"colorcode": true,
+							"git_gutter_is_enabled": true,
+							"syntax": "Packages/Ruby/Ruby.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 11,
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "app/controllers/application_controller.rb",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 352,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								352,
+								352
+							]
+						],
+						"settings":
+						{
+							"SL.3064.region_keys":
+							[
+								"sublime_linter.protected_regions"
+							],
+							"colorcode": true,
+							"git_gutter_is_enabled": true,
+							"syntax": "Packages/Ruby/Ruby.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
+					"type": "text"
+				},
+				{
+					"buffer": 7,
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2007,
+						"regions":
+						{
+							"match":
+							{
+								"flags": 112,
+								"regions":
+								[
+									[
+										229,
+										238
+									],
+									[
+										295,
+										304
+									],
+									[
+										643,
+										652
+									],
+									[
+										963,
+										972
+									],
+									[
+										1305,
+										1314
+									],
+									[
+										1632,
+										1641
+									],
+									[
+										1858,
+										1867
+									]
+								],
+								"scope": ""
+							}
+						},
+						"selection":
+						[
+							[
+								1864,
+								1864
+							]
+						],
+						"settings":
+						{
+							"colorcode": true,
+							"detect_indentation": false,
+							"git_gutter_is_enabled": false,
+							"line_numbers": false,
+							"output_tag": 1,
+							"result_base_dir": "",
+							"result_file_regex": "^([^ \t].*):$",
+							"result_line_regex": "^ +([0-9]+):",
+							"scroll_past_end": true,
+							"syntax": "Packages/Default/Find Results.hidden-tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 189.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 6,
+					"type": "text"
+				},
+				{
+					"buffer": 8,
+					"file": "app/controllers/store_controller.rb",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 186,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								95,
+								95
+							]
+						],
+						"settings":
+						{
+							"SL.3067.region_keys":
+							[
+							],
+							"colorcode": true,
+							"git_gutter_is_enabled": true,
+							"syntax": "Packages/Ruby/Ruby.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 5,
+					"type": "text"
+				},
+				{
+					"buffer": 9,
+					"file": "app/views/users/index.html.erb",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 569,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								81,
+								81
+							]
+						],
+						"settings":
+						{
+							"colorcode": true,
+							"git_gutter_is_enabled": true,
+							"syntax": "Packages/ERB Autocomplete/erb.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 18,
+					"type": "text"
+				},
+				{
+					"buffer": 10,
+					"file": "app/views/users/_form.html.erb",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 955,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								955,
+								955
+							]
+						],
+						"settings":
+						{
+							"SL.2457.region_keys":
+							[
+							],
+							"colorcode": true,
+							"git_gutter_is_enabled": true,
+							"syntax": "Packages/ERB Autocomplete/erb.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 20,
+					"type": "text"
+				},
+				{
+					"buffer": 11,
+					"file": "test/controllers/users_controller_test.rb",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1057,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								435,
+								435
+							]
+						],
+						"settings":
+						{
+							"SL.2459.region_keys":
+							[
+							],
+							"SL.2541.region_keys":
+							[
+								"sublime_linter.protected_regions"
+							],
+							"colorcode": true,
+							"git_gutter_is_enabled": true,
+							"syntax": "Packages/Ruby/Ruby.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 15,
+					"type": "text"
+				},
+				{
+					"buffer": 12,
+					"file": "test/fixtures/users.yml",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 246,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								107,
+								107
+							]
+						],
+						"settings":
+						{
+							"colorcode": true,
+							"git_gutter_is_enabled": true,
+							"syntax": "Packages/YAML/YAML.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 13,
+					"file": "test/application_system_test_case.rb",
+					"semi_transient": true,
+					"settings":
+					{
+						"buffer_size": 157,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"SL.3126.region_keys":
+							[
+							],
+							"colorcode": true,
+							"syntax": "Packages/Ruby/Ruby.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 14,
+					"file": "app/controllers/sessions_controller.rb",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 468,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								80,
+								80
+							]
+						],
+						"settings":
+						{
+							"SL.2471.region_keys":
+							[
+								"SL.ruby.Gutter.|region.yellowish markup.warning.sublime_linter|dot",
+								"sublime_linter.protected_regions",
+								"SL.ruby.Gutter.|region.redish markup.error.sublime_linter|dot",
+								"SL.ruby.Highlights.|7e0877f6920e043cfc68d1f3b8aa03a8d19ae52ad231bc8196dc9e04d8f04c90|region.redish markup.error.sublime_linter|32",
+								"SL.ruby.Highlights.|ea5384501a60d6f18f957434fe7049661866772ee797e9afcae9acd64f6deb4d|region.yellowish markup.warning.sublime_linter|32",
+								"SL.ruby.Highlights.|d49718441f2dcc42c916573fd37413d0905a768129b8ef1eba5222371e66e159|region.yellowish markup.warning.sublime_linter|32"
+							],
+							"SL.2543.region_keys":
+							[
+								"SL.ruby.Highlights.|48b7b94f868aa6a69fd5f3db56f49935b7bd4f05f054b4f9c4d31b5a22e9bacd|region.yellowish markup.warning.sublime_linter|32",
+								"sublime_linter.protected_regions",
+								"SL.ruby.Gutter.|region.yellowish markup.warning.sublime_linter|dot"
+							],
+							"SL.3054.region_keys":
+							[
+								"SL.ruby.Gutter.|region.yellowish markup.warning.sublime_linter|dot",
+								"sublime_linter.protected_regions",
+								"SL.ruby.Highlights.|419da94d5eab61dc3b3dd4878460fd4a2e3943d1bf33bfff5cf25bb09a02c1e8|region.yellowish markup.warning.sublime_linter|32"
+							],
+							"colorcode": true,
+							"git_gutter_is_enabled": true,
+							"syntax": "Packages/Ruby/Ruby.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 10,
+					"type": "text"
+				},
+				{
+					"buffer": 15,
+					"file": "app/controllers/carts_controller.rb",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2057,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1498,
+								1498
+							]
+						],
+						"settings":
+						{
+							"SL.3071.region_keys":
+							[
+								"sublime_linter.protected_regions"
+							],
+							"colorcode": true,
+							"git_gutter_is_enabled": true,
+							"syntax": "Packages/Ruby/Ruby.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 1008.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 9,
+					"type": "text"
+				},
+				{
+					"buffer": 16,
+					"file": "app/controllers/line_items_controller.rb",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2257,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								389,
+								389
+							]
+						],
+						"settings":
+						{
+							"SL.3080.region_keys":
+							[
+								"sublime_linter.protected_regions"
+							],
+							"colorcode": true,
+							"git_gutter_is_enabled": true,
+							"syntax": "Packages/Ruby/Ruby.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 8,
+					"type": "text"
+				},
+				{
+					"buffer": 17,
+					"file": "app/views/admin/index.html.erb",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 137,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								132,
+								132
+							]
+						],
+						"settings":
+						{
+							"SL.2480.region_keys":
+							[
+							],
+							"colorcode": true,
+							"git_gutter_is_enabled": true,
+							"syntax": "Packages/ERB Autocomplete/erb.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 19,
+					"type": "text"
+				},
+				{
+					"buffer": 18,
+					"file": "app/controllers/admin_controller.rb",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 99,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								99,
+								99
+							]
+						],
+						"settings":
+						{
+							"SL.2481.region_keys":
+							[
+								"sublime_linter.protected_regions"
+							],
+							"SL.2545.region_keys":
+							[
+							],
+							"colorcode": true,
+							"git_gutter_is_enabled": true,
+							"syntax": "Packages/Ruby/Ruby.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 17,
+					"type": "text"
+				},
+				{
+					"buffer": 19,
+					"file": "test/controllers/admin_controller_test.rb",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 171,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								130,
+								130
+							]
+						],
+						"settings":
+						{
+							"SL.2554.region_keys":
+							[
+							],
+							"colorcode": true,
+							"git_gutter_is_enabled": true,
+							"syntax": "Packages/Ruby/Ruby.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 16,
+					"type": "text"
+				},
+				{
+					"buffer": 20,
+					"file": "config/routes.rb",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 453,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								453,
+								453
+							]
+						],
+						"settings":
+						{
+							"SL.2482.region_keys":
+							[
+								"sublime_linter.protected_regions"
+							],
+							"SL.2546.region_keys":
+							[
+							],
+							"SL.3058.region_keys":
+							[
+							],
+							"colorcode": true,
+							"git_gutter_is_enabled": true,
+							"syntax": "Packages/Ruby/Ruby.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 21,
+					"file": "test/test_helper.rb",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 450,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								450,
+								450
+							]
+						],
+						"settings":
+						{
+							"SL.3083.region_keys":
+							[
+								"sublime_linter.protected_regions"
+							],
+							"SL.3122.region_keys":
+							[
+							],
+							"colorcode": true,
+							"git_gutter_is_enabled": true,
+							"syntax": "Packages/Ruby/Ruby.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
 					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 22,
+					"file": "app/views/sessions/new.html.erb",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 504,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								459,
+								459
+							]
+						],
+						"settings":
+						{
+							"SL.2475.region_keys":
+							[
+							],
+							"colorcode": true,
+							"git_gutter_is_enabled": true,
+							"syntax": "Packages/ERB Autocomplete/erb.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 12,
+					"type": "text"
+				},
+				{
+					"buffer": 23,
+					"file": "app/views/orders/index.html.erb",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 766,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								63,
+								63
+							]
+						],
+						"settings":
+						{
+							"colorcode": true,
+							"git_gutter_is_enabled": true,
+							"syntax": "Packages/ERB Autocomplete/erb.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 13,
+					"type": "text"
+				},
+				{
+					"buffer": 24,
+					"file": "test/controllers/sessions_controller_test.rb",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 625,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								214,
+								214
+							]
+						],
+						"settings":
+						{
+							"SL.2493.region_keys":
+							[
+							],
+							"SL.2549.region_keys":
+							[
+								"sublime_linter.protected_regions"
+							],
+							"colorcode": true,
+							"git_gutter_is_enabled": true,
+							"syntax": "Packages/Ruby/Ruby.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 14,
 					"type": "text"
 				}
 			]
@@ -709,7 +1926,7 @@
 	],
 	"incremental_find":
 	{
-		"height": 29.0
+		"height": 30.0
 	},
 	"input":
 	{
@@ -738,6 +1955,14 @@
 		]
 	},
 	"menu_visible": true,
+	"output.SublimeLinter":
+	{
+		"height": 138.0
+	},
+	"output.SublimeLinter Messages":
+	{
+		"height": 138.0
+	},
 	"output.exec":
 	{
 		"height": 130.0
@@ -746,11 +1971,15 @@
 	{
 		"height": 0.0
 	},
+	"output.mdpopups":
+	{
+		"height": 0.0
+	},
 	"pinned_build_system": "",
 	"project": "magaz.sublime-project",
 	"replace":
 	{
-		"height": 54.0
+		"height": 76.0
 	},
 	"save_all_on_build": true,
 	"select_file":
@@ -759,6 +1988,66 @@
 		"last_filter": "",
 		"selected_items":
 		[
+			[
+				"ro",
+				"config/routes.rb"
+			],
+			[
+				"store",
+				"app/controllers/store_controller.rb"
+			],
+			[
+				"order",
+				"app/controllers/orders_controller.rb"
+			],
+			[
+				"line",
+				"app/controllers/line_items_controller.rb"
+			],
+			[
+				"cart",
+				"app/controllers/carts_controller.rb"
+			],
+			[
+				"session",
+				"app/controllers/sessions_controller.rb"
+			],
+			[
+				"app",
+				"app/controllers/application_controller.rb"
+			],
+			[
+				"ses",
+				"app/controllers/sessions_controller.rb"
+			],
+			[
+				"rou",
+				"config/routes.rb"
+			],
+			[
+				"sessin",
+				"app/controllers/sessions_controller.rb"
+			],
+			[
+				"users_co",
+				"test/controllers/users_controller_test.rb"
+			],
+			[
+				"index ud",
+				"app/views/users/index.html.erb"
+			],
+			[
+				"user cont",
+				"app/controllers/users_controller.rb"
+			],
+			[
+				"gem",
+				"Gemfile"
+			],
+			[
+				"user",
+				"app/models/user.rb"
+			],
 			[
 				"orderno",
 				"app/mailers/order_notifier_mailer.rb"
@@ -769,10 +2058,6 @@
 			],
 			[
 				"",
-				"app/controllers/orders_controller.rb"
-			],
-			[
-				"order",
 				"app/controllers/orders_controller.rb"
 			],
 			[
@@ -792,16 +2077,8 @@
 				"test/controllers/orders_controller_test.rb"
 			],
 			[
-				"ro",
-				"config/routes.rb"
-			],
-			[
 				"linec",
 				"app/controllers/line_items_controller.rb"
-			],
-			[
-				"line",
-				"test/controllers/line_items_controller_test.rb"
 			],
 			[
 				"inde",
@@ -812,16 +2089,8 @@
 				"app/controllers/line_items_controller.rb"
 			],
 			[
-				"store",
-				"test/controllers/store_controller_test.rb"
-			],
-			[
 				"applica",
 				"app/views/layouts/application.html.erb"
-			],
-			[
-				"cart",
-				"app/controllers/carts_controller.rb"
 			],
 			[
 				"show",
